@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+.dragging-side{
+    background: #355C7D;
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    width: 23%;
+    height: 70vh;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.755);
+    border-radius: 10px;
+}
+.dragging-side .inputbtnSide{
+    display: flex;
+    width: 100%;
+}
+
+.dragging-side .inputbtnSide .input-area{
+    width: 100%;
+    margin-bottom: 6px;
+}
+.dragging-side .inputbtnSide input{
+    width: 90%;
+    margin-left: 16px;
+    border-radius: 5px;
+    border-color: #6C5B7B;
+    background-color: #6C5B7B;
+    padding-top: 4px;
+}
+.dragging-side .inputbtnSide btnJS{
+    width: 100%;
+}
+.dragging-side .inputbtnSide button{
+    border: none;
+    width: 30px;
+    background-color: rgba(53, 91, 125, 0.8);
+    /* background-color: rgb(61, 143, 143); */
+    cursor: pointer;
+    padding-top: 4px;
+    margin-right: 20px;
+    color:#6dd5fa;
+}
+.dragging-side h1{
+    text-align: center;
+    color: rgb(45, 43, 43);
+    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(128, 123, 123);
+    font-size: 26px;
+    user-select: none;
+    
+}
+.dragging-side{
+    background: #355C7D;
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    width:23%;
+    height: 70vh;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.755);
+    border-radius: 10px;
+}
+.dragging-side h1{
+    text-align: center;
+    color: rgb(45, 43, 43);
+    border-bottom: 2px solid rgb(128, 123, 123);
+    font-size: 26px;
+    user-select: none;
+}
+#newElement{
+    border: 1px solid black;
+    background-color: black;
+    width: 93%;
+    color: white;
+    padding-left: 5px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#newElement:hover{
+    background-color: rgb(207, 127, 127);
+}
+.silbuton{
+    margin-left: 45px;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-block;
+    background-color:mediumspringgreen;
+    margin-top: 2px;
+    color: white;
+    padding-left: 5px;
+    text-align: center;
+}
+.silbuton:hover{
+    background-color: white;
+    color: black;
+}
+.done{
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    display: inline-block;
+    background-color:darkturquoise;
+    margin-top: 2px;
+    color: white;
+    padding-left: 5px;
+    text-align: center;
+}
+.done:hover{
+    background-color: white;
+    color: black;
+}
+.linethrough{
+    text-decoration: red line-through 3px;
+}
+.todo{
+    background-color: rgb(207, 127, 127);
+}   
+ #secondline div{
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#thirdline div{
+    background-color: orange;
+    border: 1px solid black;
+    color: white;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#lastline div{
+    background-color: rgb(72, 72, 228);
+    border: 1px solid black;
+    color: white;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#newElement > .silbuton{
+    height: 20px;
+}
+#newElement > .silbuton:hover{
+    background-color: rgb(56, 230, 56);
+}
+#newElement > .done{
+    height: 20px;
+}
+#newElement > .done:hover{
+    background-color: turquoise;
+}
+.change{
+    background-color: red;
+    color: white;
+}
+.later{
+    background-color: cyan;
+    color: white;
+}
+.dragged-item{
+    opacity: .1;
+    /* transform: rotateX(90deg); */
+}
